@@ -1,0 +1,60 @@
+Basic Network Scanning with Nmap
+
+Objective
+
+The objective of this task is to perform a basic network scan using Nmap and identify open ports and services running on a local machine.
+
+Tools Used
+
+- Nmap
+- Command Prompt
+- official website:
+
+https://nmap.org/
+
+Steps Performed
+
+1. Installed Nmap
+
+Downloaded and installed Nmap from the official website.
+
+2. Identified Local IP Address
+
+Used the following command:
+
+ipconfig
+
+3. Performed Basic Scan
+
+nmap 192.168.1.5
+
+4. Performed Service Version Scan
+
+nmap -sV 192.168.1.5
+
+5. Saved Results to File
+
+nmap -sV 192.168.1.5 > nmap_scan_results.txt
+
+Open Ports and Services Found
+
+Port| Service| Description
+135| MSRPC| Microsoft Remote Procedure Call
+139| NetBIOS| File and printer sharing
+445| Microsoft-DS| SMB file sharing service
+
+Significance of Open Ports
+
+- Port 135 is used for Windows remote communication.
+- Port 139 is used for file and printer sharing services.
+- Port 445 is used for SMB communication and file sharing.
+
+Files Included
+
+- nmap_scan_results.txt
+- Screenshots of scan results
+- README.md
+
+Conclusion
+
+Successfully performed a basic network scan using Nmap and identified open ports and services running on the local machine.
