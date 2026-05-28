@@ -1,0 +1,41 @@
+Basic Firewall Configuration with UFW
+
+Objective
+
+The objective of this task is to configure a basic firewall using UFW (Uncomplicated Firewall) on Ubuntu Linux.
+
+Tools Used
+
+- Ubuntu Linux
+- UFW (Uncomplicated Firewall)
+
+Steps Performed
+
+1. Installed UFW using:
+   
+   sudo apt install ufw -y
+
+2. Allowed SSH connections:
+   
+   sudo ufw allow ssh
+
+3. Denied HTTP traffic:
+   
+   sudo ufw deny http
+
+4. Enabled the firewall:
+   
+   sudo ufw enable
+
+5. Verified firewall rules:
+   
+   sudo ufw status numbered
+
+Files Included
+
+- "ufw_configuration.sh" → Shell script for firewall configuration
+- "ufw_status.png" → Screenshot showing active firewall rules
+
+Result
+
+Successfully configured a basic firewall using UFW by allowing SSH access and denying HTTP traffic.
